@@ -1,5 +1,5 @@
-[![Docker Stars](https://img.shields.io/docker/stars/frolvlad/alpine-glibc.svg?style=flat-square)](https://hub.docker.com/r/frolvlad/alpine-glibc/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/frolvlad/alpine-glibc.svg?style=flat-square)](https://hub.docker.com/r/frolvlad/alpine-glibc/)
+[![Docker Stars](https://img.shields.io/docker/stars/covis/alpine-glibc.svg?style=flat-square)](https://hub.docker.com/r/covis/alpine-glibc/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/covis/alpine-glibc.svg?style=flat-square)](https://hub.docker.com/r/covis/alpine-glibc/)
 
 
 Alpine GNU C library (glibc) Docker image
@@ -12,10 +12,11 @@ This image includes some quirks to make [glibc](https://www.gnu.org/software/lib
 side with musl libc (default in Alpine Linux). glibc packages for Alpine Linux are prepared by
 [Sasha Gerrand](https://github.com/sgerrand) and the releases are published in
 [sgerrand/alpine-pkg-glibc](https://github.com/sgerrand/alpine-pkg-glibc) github repo.
+This repo is a fork of https://github.com/frol/docker-alpine-glibc.
 
 Download size of this image is only:
 
-[![](https://images.microbadger.com/badges/image/frolvlad/alpine-glibc.svg)](http://microbadger.com/images/frolvlad/alpine-glibc "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/covis/alpine-glibc.svg)](http://microbadger.com/images/covis/alpine-glibc "Get your own image badge on microbadger.com")
 
 
 Usage Example
@@ -24,7 +25,7 @@ Usage Example
 This image is intended to be a base image for your projects, so you may use it like this:
 
 ```Dockerfile
-FROM frolvlad/alpine-glibc
+FROM covis/alpine-glibc
 
 COPY ./my_app /usr/local/bin/my_app
 ```
@@ -32,8 +33,3 @@ COPY ./my_app /usr/local/bin/my_app
 ```sh
 $ docker build -t my_app .
 ```
-
-There are already several images using this image, so you can refer to them as usage examples:
-
-* [`frolvlad/alpine-oraclejdk8`](https://hub.docker.com/r/frolvlad/alpine-oraclejdk8/) ([github](https://github.com/frol/docker-alpine-oraclejdk8))
-* [`frolvlad/alpine-mono`](https://hub.docker.com/r/frolvlad/alpine-mono/) ([github](https://github.com/frol/docker-alpine-mono))
